@@ -41,3 +41,7 @@ Test the code using
 To start the package
 
 - mvn package exec:java
+
+****************
+By default the Program is starting with 5x5 venue with 10 seconds to hold
+ticket.
