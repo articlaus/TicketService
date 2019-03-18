@@ -17,7 +17,7 @@ public class TicketUnHolder implements Runnable {
     private Stage stage;
 
     /**
-     * Runnable class which ce ben scheduled to periodically check and free held tickets
+     * Runnable class which can be scheduled to periodically check and free held tickets
      *
      * @param stage              The stage to work on.
      * @param numOfSecondsToHold number of seconds to hold the ticket before releasing
