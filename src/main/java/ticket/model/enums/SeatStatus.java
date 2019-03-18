@@ -1,7 +1,7 @@
 package ticket.model.enums;
 
 /**
- * Created by: Arti
+ * Created by: Ganbat Bayar
  * On: 3/14/2019
  * Project: WalHomework
  * Possible states the seat can be in

@@ -30,7 +30,7 @@ public class SeatHelper {
         List<Seat> returnSeats = new ArrayList<>();
         for (int i = 0; i < stage.getRows(); i++) {
             returnSeats.clear();
-            for (int j = 0; j < stage.getRows(); j++) {
+            for (int j = 0; j < stage.getCols(); j++) {
                 if (!stage.getStageSeats()[i][j].getStatus().equals(SeatStatus.FREE)) {
                     returnSeats.clear();
                     continue;
