@@ -83,6 +83,8 @@ public class Main {
                         int orderId;
                         try {
                             orderId = scanner3.nextInt();
+                            if (orderId > heldSeats.size())
+                                throw new InputMismatchException();
                             Optional<SeatHold> seatHold = Optional.ofNullable(heldSeats.get(orderId));
                             if (seatHold.isPresent()) {
                                 System.out.println(service.reserveSeats(seatHold.get().getSeatHeldId(), seatHold.get().getCustomerEmail()));
