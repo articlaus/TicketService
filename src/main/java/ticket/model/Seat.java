@@ -1,8 +1,8 @@
-package model;
+package ticket.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import model.enums.SeatStatus;
+import ticket.model.enums.SeatStatus;
 
 /**
  * Created by: Ganbat Bayar
@@ -12,8 +12,7 @@ import model.enums.SeatStatus;
 @Data
 @AllArgsConstructor
 public class Seat {
-    private Integer row;
-    private Integer col;
+    private int row;
+    private int col;
     private SeatStatus status;
-
 }

@@ -1,6 +1,7 @@
-package model;
+package ticket.model;
 
 import lombok.Data;
+import ticket.model.enums.SeatHoldStatus;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -17,15 +18,15 @@ public class SeatHold {
     private List<Seat> seatsHeld = new ArrayList<>();
     private String customerEmail;
     private Instant reserveDate = Instant.now();
-    private String status;
+    private SeatHoldStatus status;
 
-    public SeatHold(int seatHeldId, String customerEmail, String status) {
+    public SeatHold(int seatHeldId, String customerEmail, SeatHoldStatus status) {
         this.seatHeldId = seatHeldId;
         this.customerEmail = customerEmail;
         this.status = status;
     }
 
-    public SeatHold(String status) {
+    public SeatHold(SeatHoldStatus status) {
         this.status = status;
     }
 

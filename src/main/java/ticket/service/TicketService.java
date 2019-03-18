@@ -1,4 +1,6 @@
-import model.SeatHold;
+package ticket.service;
+
+import ticket.model.SeatHold;
 
 /**
  * Created by: Ganbat Bayar
@@ -18,7 +20,7 @@ public interface TicketService {
      *
      * @param numSeats      the number of seats to find and hold
      * @param customerEmail unique identifier for the customer
-     * @return a model.SeatHold object identifying the specific seats and related
+     * @return a ticket.model.SeatHold object identifying the specific seats and related
      * information
      */
     SeatHold findAndHoldSeats(int numSeats, String customerEmail);
