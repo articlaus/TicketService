@@ -24,7 +24,7 @@ public class Main {
             System.out.println("1. Show Free Seats.");
             System.out.println("2. Book Tickets.");
             System.out.println("3. Finalize Reservation.");
-            System.out.println("4. Wait for 10 sec.");
+            System.out.println("4. Wait for 20 sec.");
             System.out.println("5. Exit.");
             System.out.println("==============\n");
             Scanner scanner = new Scanner(System.in);
