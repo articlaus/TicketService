@@ -18,7 +18,15 @@ Class purpose and certain descriptions are written inside the class via comments
 Refer to it for more details
 **********************************
 Seating algorithm tries to first fulfill request by seating everyone in a single row. If it couldn't find
-a row which fulfills the condition, it assigns seats from the remaining free seats from top to bottom. 
+a row which fulfills the condition, it assigns seats from the remaining free seats from top to bottom.
+
+for example:
+
+if our stage is 2x3 and there are three requests made each wanting 2 seats then it will book it like this
+
+- 1-1-3
+
+- 2-2-3 
 
 **********************************
 Project written using base java with only imports being
