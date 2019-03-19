@@ -43,5 +43,7 @@ To start the package
 - mvn package exec:java
 
 ****************
-By default the Program is starting with 5x5 venue with 10 seconds to hold
-ticket.
+By default the Program is starting with 5x5 venue with 20 seconds to hold
+ticket. 
+
+Load testing class is using 50x50 venue to test high load scenarios.

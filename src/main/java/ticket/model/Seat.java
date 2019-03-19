@@ -15,4 +15,9 @@ public class Seat {
     private int row;
     private int col;
     private SeatStatus status;
+
+    @Override
+    public String toString() {
+        return "Seat(row=" + this.getRow() + ", col=" + this.getCol() + ")";
+    }
 }
