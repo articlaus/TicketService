@@ -15,13 +15,15 @@ import static org.junit.jupiter.api.Assertions.*;
  * Test class to check simple insertion and response of the Service and its methods
  */
 class SimpleTest {
-    private static int row = 5, col = 5, hold = 1;
 
     private TicketServiceImpl service;
     private String mail = "test@test.com";
 
     @BeforeEach
     void init() {
+        int row = 5;
+        int col = 5;
+        int hold = 1;
         service = new TicketServiceImpl(row, col, hold);
     }
 
