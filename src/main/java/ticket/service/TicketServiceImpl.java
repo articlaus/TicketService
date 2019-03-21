@@ -47,7 +47,8 @@ public class TicketServiceImpl implements TicketService {
      * @param secToHold seconds to hold the ticket before expiring
      */
     public TicketServiceImpl(int row, int col, long secToHold) {
-        stage = new Stage(row, col);
+        Stage.init(row, col);
+        this.stage = Stage.getInstance();
         idGenerator = new AtomicInteger();
         lock = new ReentrantLock(true);
         ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
